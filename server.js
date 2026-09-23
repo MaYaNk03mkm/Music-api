@@ -41,6 +41,20 @@ app.get("/",(req,res)=>{
 app.get("/api/songs", (req, res) => {
     res.json(songs);
 });
+
+
+
+app.get("/api/songs/search",(req,res) => {
+    const query = req.query.q?.toLowerCase();
+    const result = songs.filter(songs =>
+        songs.title.toLowerCase().includes(query) ||
+        songs.artist.toLowerCase().includes(query)||
+        songs.album.toLowerCase().includes(query)||
+        songs.genre.toLowerCase().includes(query)
+    );
+    res.json(result);
+})
+
 app.get("/api/songs/:id", (req, res) => {
     const id = parseInt(req.params.id);
 
