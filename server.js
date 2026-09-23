@@ -23,6 +23,13 @@ let songs = [
         artist: "Foo Fighters",
         album: "The Colour and the Shape",
         genre: "Alternative Rock"
+    },
+    {
+        id:4,
+        title:"No surprises",
+        artist:"Radiohead",
+        album:"idk",
+        genre:"grunge"
     }
 ];
 
