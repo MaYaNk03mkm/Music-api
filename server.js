@@ -37,6 +37,13 @@ let songs = [
         artist:"lamp of god",
         album:"idk this one",
         genre:"metal"
+    },
+    {
+        id:6,
+        title:"piano man",
+        artist:"billy jeol",
+        album:"same idk",
+        genre:"dance muusic"
     }
 ];
 
