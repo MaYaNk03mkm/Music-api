@@ -42,7 +42,16 @@ app.get("/api/songs", (req, res) => {
     res.json(songs);
 });
 
-
+app.get("/api/songs/genre",(req,res) =>{
+    const genre = req.query.q?.toLowerCase();
+    const result = songs.filter(songs =>
+        songs.title.toLowerCase().includes(genre)||
+        songs.artist.toLowerCase().includes(genre)||
+        songs.album.toLowerCase().includes(genre)||
+        songs.genre.toLowerCase().includes(genre)
+    )
+    res.json(result);
+})
 
 app.get("/api/songs/search",(req,res) => {
     const query = req.query.q?.toLowerCase();
