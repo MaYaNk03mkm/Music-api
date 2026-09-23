@@ -30,6 +30,13 @@ let songs = [
         artist:"Radiohead",
         album:"idk",
         genre:"grunge"
+    },
+    {
+        id:5,
+        title:"redneck",
+        artist:"lamp of god",
+        album:"idk this one",
+        genre:"metal"
     }
 ];
 
